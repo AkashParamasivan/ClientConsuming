@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{ ViewBag.Title = "Index";
+               }
+
+<h2 style="color:black">Welcome Administrator</h2>
+
+<button id="my-button" onclick="location.href='@Url.Action( "AddSpecilization","Specilization")'">Add Specilization</button>
+<button id="my-button" onclick="location.href='@Url.Action( "AddSpecification","Specification")'">Add Specification</button>
+<div></div>
+@Html.ActionLink("Logout", "Login", "Login") 
